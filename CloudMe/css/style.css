@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --theme-color: rgb(99, 68, 74);
+    --light: #fff;
+    --dark:#000;
+    --grey:#cecece;
+    --bg:rgb(238, 238, 238);
+    --logo:rgb(183, 102, 98);
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--bg);
+    font-family: 'Mulish', sans-serif;
+}
+
+.header-page{
+    background-color: var(--theme-color);
+    height: 110px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.header-page h2>*{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title a{
+    color: var(--light);
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.header-menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.header-menu ul li a{
+    color: var(--light);
+    margin-left: 25px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.header-menu ul li a:hover{
+    color: var(--logo);
+}
+
+.container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 100px 350px 0px 350px;
+
+}
+
+.container img{
+    margin-right: 30px;
+}
+
+.empresa{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text-title{
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.text{
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.btn{
+    padding: 20px 30px;
+    background-color: var(--theme-color);
+    color: var(--light);
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn:hover{
+    color: var(--logo);
+}
+
+.tools{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 200px;
+}
+
+.box{
+    margin: 20px;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-transform: bold;
+    color: var(--theme-color);
+    border: 1px dotted currentColor;
+    cursor: pointer;
+
+}
+
+.box img{
+    margin-bottom: 20px;
+}
+
